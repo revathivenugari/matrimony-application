@@ -1,0 +1,45 @@
+<div class="my-match">
+  <div class="profile-container">
+    <h5>My Matchs</h5>
+    <h6>9 Profile pending with me</h6>
+  </div>
+
+  <div class="carousel-container">
+
+    <!-- Left Arrow -->
+    <button class="arrow left" (click)="previous()" [disabled]="isPreviousDisabled()">&#10094;</button>
+
+    <div class="carousel-wrapper" [ngStyle]="{'transform': 'translateX(' + (-currentIndex * 100) + '%)'}"
+      (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
+      <mat-card class="profile-card" *ngFor="let profile of profiles; let i = index">
+
+        <img mat-card-image [src]="profile.image" alt="Photo of {{ profile.name }}" class="profile-image"
+          (click)="viewProfile(profile)" />
+        <mat-card-content>
+          <h3>{{ profile.name }}</h3>
+          <p>{{ profile.age }} Yrs, {{ profile.height }}, {{ profile.profession }}, <br>{{ profile.city }}, {{
+            profile.state }}, {{ profile.country }}</p>
+        </mat-card-content>
+        <mat-card-actions class="action-buttons">
+          <button class="yes-no" mat-raised-button color="primary" (click)="viewProfile(profile)">Yes</button>
+          <button class="yes-no" mat-raised-button color="warn" (click)="swipeLeft()">No</button>
+
+          <!-- <button mat-icon-button (click)="swipeLeft()">
+          <mat-icon>close</mat-icon>
+        </button>
+        <button mat-icon-button (click)="shortlist()">
+          <mat-icon>star</mat-icon>
+        </button>
+        <button mat-icon-button (click)="swipeRight()">
+          <mat-icon>check</mat-icon>
+        </button> -->
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <!-- Right Arrow -->
+    <button class="arrow right" (click)="next()" [disabled]="isNextDisabled()">&#10095;</button>
+  </div>
+</div>
+<!-- Optional loading bar -->
+<!-- <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar> -->

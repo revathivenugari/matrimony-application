@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Priyanka",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "profession": "Doctor",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/RhVvDLxv/1profile.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Aiswarya",
+    "age": 26,
+    "height": "5 ft 1 in",
+    "profession": "Engineer",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/QN08WwcC/2profile.jpg"
+  }, 
+  {
+    "id": 3,
+    "name": "Praneetha",
+    "age": 27,
+    "height": "5 ft 6 in",
+    "profession": "Designer",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/7Yhx19NV/3profile.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Kushi",
+    "age": 26,
+    "height": "5 ft 1 in",
+    "profession": "Teacher",
+    "city": "Hosur",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/k53qmmP1/4profile.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Lakshmi",
+    "age": 26,
+    "height": "5 ft 4 in",
+    "profession": "Engineer",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/PqWhfRtt/5profile.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Ria",
+    "age": 22,
+    "height": "5 ft 1 in",
+    "profession": "Actor",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/XJnWrkJ9/6profile.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Kushi",
+    "age": 25,
+    "height": "5 ft 1 in",
+    "profession": "Dance Teacher",
+    "city": "Kanchipuram",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/3Jh6CTxk/7profile.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Lakshmi",
+    "age": 26,
+    "height": "5 ft",
+    "profession": "Chemist",
+    "city": "Selam",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/9XdgfnYC/8profile.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ria",
+    "age": 30,
+    "height": "5 ft 1 in",
+    "profession": "Teacher",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "country": "India",
+    "image": "https://i.postimg.cc/mkLYk8Tg/9profile.jpg"
+  }
+]

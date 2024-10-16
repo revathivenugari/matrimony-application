@@ -1,0 +1,180 @@
+ .carousel-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+ }
+
+ .carousel-wrapper {
+   display: flex;
+   transition: transform 0.5s ease;
+   width: 100%;
+ }
+
+ .example-card {
+   min-width: 300px;
+   max-width: 600px;
+   margin: 20px;
+   flex: 0 0 100%;
+ }
+
+ img {
+   object-fit: cover;
+   width: 100%;
+   height: 300px;
+ }
+
+
+ .arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background-color: rgba(0, 0, 0, 0.5);
+   color: white;
+   font-size: 24px;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+   z-index: 1;
+ }
+
+ .arrow.left {
+   left: 10px;
+ }
+
+ .arrow.right {
+   right: 10px;
+ }
+
+ .arrow:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ .profile-card {
+   width: 300px;
+   margin: 0 10px;
+ }
+
+ .profile-image {
+   width: 100%;
+   height: 250px;
+   border-radius: 10px;
+   margin-bottom: 10px;
+ }
+
+ .action-buttons {
+   display: flex;
+   justify-content: flex-start;
+ }
+
+ .yes-no {
+   margin: 5px;
+ }
+
+ .profile-swipe-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+
+   height: 100vh;
+ }
+
+ .carousel-wrapper {
+   display: flex;
+   transition: transform 0.3s ease-in-out;
+ }
+
+ .profile-card {
+   flex: 0 0 100%;
+   max-width: 434px;
+   margin: 0 auto;
+   margin: 0 10px;
+   cursor: pointer;
+   padding: 10px;
+ }
+
+
+ .snack-bar {
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 4px;
+   padding: 8px;
+ }
+
+ ::ng-deep .snack-bar-interested {
+   background-color: green !important;
+ }
+
+ ::ng-deep .snack-bar-shortlisted {
+   background-color: lightyellow !important;
+   color: black !important;
+ }
+
+ ::ng-deep .snack-bar-rejected {
+   background-color: lightcoral !important;
+ }
+
+ .my-profiles {
+   background-color: darkcyan;
+
+ }
+
+ .profile-container {
+   color: #fff;
+   padding: 20px 0px 0px 40px;
+
+ }
+
+ .arrow:disabled {
+   opacity: 0.5;
+   cursor: not-allowed;
+ }
+
+ @media screen and (max-width: 768px) {
+   .profile-card {
+     max-width: 95%;
+   }
+ }
+/* For Mobile Devices */
+@media (max-width: 600px) {
+
+
+  .profile-card {
+    width: 100%; /* Full width for single card on mobile */
+  }
+
+
+  .arrow {
+    display: block; /* Keep the navigation arrows visible on mobile */
+    font-size: 24px; /* Adjust arrow size for better visibility */
+  }
+}
+
+/* For Tablet Devices */
+@media (min-width: 600px) and (max-width: 1024px) {
+
+
+  .profile-card {
+    width: calc(50% - 20px); /* Two cards per row */
+    max-width: 390px;
+    margin: 10px;
+  }
+
+  .action-buttons {
+    justify-content: space-between;
+  }
+
+  .arrow {
+    display: block;
+    font-size: 28px;
+  }
+}
+
+
+
+

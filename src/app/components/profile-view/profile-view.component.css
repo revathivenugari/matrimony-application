@@ -1,0 +1,198 @@
+/* For right swipe animation */
+.right-swipe {
+  animation: swipe-right 0.3s forwards;
+}
+
+@keyframes swipe-right {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* For left swipe animation */
+.left-swipe {
+  animation: swipe-left 0.3s forwards;
+}
+
+@keyframes swipe-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+.snackbar-interested {
+  background-color: #4caf50;
+}
+
+.snackbar-not-interested {
+  background-color: #f44336;
+}
+
+.snackbar-shortlisted {
+  background-color: #ffeb3b;
+}
+
+.profile-view-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #ffffff 0%, #f9f9f9 100%);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-image-container {
+  text-align: center;
+  padding: 16px;
+  background-color: white;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.profile-details {
+  padding: 16px;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.profile-info {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: white;
+}
+
+.action-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: none;
+  font-size: 14px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.action-button mat-icon {
+  margin-right: 0px;
+}
+
+mat-card-actions .mat-button {
+  color: inherit;
+  text-transform: none;
+}
+
+.like-her {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.like-her p {
+  margin: 0;
+}
+.profile-Match{
+display:flex;
+justify-content: center;
+padding-top:5px;
+color: #ffffff;
+
+}
+
+
+/* For Mobile Devices */
+@media (max-width: 600px) {
+  .profile-view-container {
+    padding: 10px;
+  }
+
+  .profile-card {
+    max-width: 100%; 
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .profile-details {
+    padding: 10px;
+  }
+
+  .profile-name {
+    font-size: 20px;
+  }
+
+  .profile-info {
+    font-size: 14px;
+  }
+
+  .action-button {
+    font-size: 12px;
+  }
+}
+
+/* For Tablet Devices */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .profile-view-container {
+    padding: 20px;
+  }
+
+  .profile-card {
+    max-width: 80%;
+  }
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+  .profile-name {
+    font-size: 22px;
+  }
+
+  .profile-info {
+    font-size: 16px;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+  }
+
+  .action-button {
+    font-size: 14px;
+  }
+}
+

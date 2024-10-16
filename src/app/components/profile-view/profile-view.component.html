@@ -1,0 +1,45 @@
+<div class="profile-Match">
+
+  <h6>Daily Recomendations</h6>
+</div>
+<div class="profile-view-container">
+ 
+  <mat-card class="profile-card" [ngClass]="swipeAnimation">
+
+    <div class="profile-image-container">
+      <img mat-card-image class="profile-image" [src]="profile.image" alt="{{ profile.name }}">
+    </div>
+
+
+    <mat-card-content class="profile-details">
+      <h2 class="profile-name">{{ profile.name }}</h2>
+      <p class="profile-info">{{ profile.age }} Yrs, {{ profile.height }}, {{ profile.profession }},
+        {{ profile.city }}, {{ profile.state }}, {{ profile.country }}</p>
+    </mat-card-content>
+
+
+    <mat-card-actions class="action-buttons">
+
+      <div class="list">
+
+        <button mat-button class="action-button" color="accent" (click)="shortlist()">
+          <mat-icon>star</mat-icon>
+          <span>Shortlist</span>
+        </button>
+      </div>
+      <div class="like-her">
+
+        <p>Like her?</p>
+        <button mat-button class="action-button" color="warn" (click)="swipeLeft()">
+          <mat-icon>close</mat-icon>
+
+        </button>
+
+        <button mat-button class="action-button" color="primary" (click)="swipeRight()">
+          <mat-icon>check</mat-icon>
+
+        </button>
+      </div>
+    </mat-card-actions>
+  </mat-card>
+</div>
